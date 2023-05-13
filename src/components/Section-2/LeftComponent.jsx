@@ -1,4 +1,9 @@
-<svg
+const LeftComponent = () => {
+  return (
+    <div className="w-1/2 h-[100vh] flex justify-center items-center sticky top-0">
+    <div className="w-4/5 m-auto ">
+      <p className="flex items-center text-2xl text-[#A594FD]">
+        <svg
           width="18"
           height="18"
           viewBox="0 0 18 18"
@@ -11,3 +16,19 @@
             fill="#A594FD"
           ></path>
         </svg>
+        Workflow
+      </p>
+      <h3 className="text-7xl font-bold">
+        Create at <br /> the speed <br /> of thought.
+      </h3>
+      <p className="my-6 font-semibold text-gray-300">
+        Focus of your getting your thoughts out and creating the best{" "}
+        <br />
+        message while Chronicle does the heavy lifting for you
+      </p>
+    </div>
+  </div>
+  )
+}
+
+export default LeftComponent

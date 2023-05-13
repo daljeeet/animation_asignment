@@ -12,7 +12,20 @@ export default {
       'display': ['Oswald'],
       'body': ['Open Sans'],
     },
-    extend: {},
+    extend: {
+      animation:{
+        fadeIn:"fadeIn 400ms ease-in-out"
+      },
+      keyframes:{
+        fadeIn :{
+          "0%" :{ opacity:"0.20"},
+          "100%": { opacity:"1"}
+        },
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+		require("tailwindcss-animate"),
+		// ...
+	],
 }
